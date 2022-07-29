@@ -1,16 +1,15 @@
 import './Home.style.scss'
 import { useState } from 'react'
 import '../layout/Layout.style.scss'
-import LogoTitle from '../../assets/images/logo-s.png'
+import LogoTitle from '../../assets/images/logoH1.png'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from './animatedLetters/Animatedletters.component'
 import { useEffect } from 'react'
-import Logo from './animatedLetters/Logo/Logo.component'
 import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
+  const nameArray = ["_",'H', 'a', 'r', 's', 'h']
   const jobArray = [
     'w',
     'e',
@@ -43,7 +42,7 @@ const Home = () => {
           <br />
           <span className={`${letterClass} _13`}>I</span>
           <span className={`${letterClass} _14`}>'m</span>
-          <img src={LogoTitle} alt="My Name" />
+
           <AnimatedLetters
             letterClass={letterClass}
             strArray={nameArray}
@@ -61,7 +60,19 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
-      <Logo/>
+      <img className='harsh-logo harsh-logo1' src={LogoTitle} alt="My Name" />
+      <img className='harsh-logo harsh-logo2' src={LogoTitle} alt="My Name" />
+      <img className='harsh-logo harsh-logo3' src={LogoTitle} alt="My Name" />
+      <img className='harsh-logo harsh-logo4' src={LogoTitle} alt="My Name" />
+      <img className='harsh-logo harsh-logo5' src={LogoTitle} alt="My Name" />
+      <img className='harsh-logo harsh-logo6' src={LogoTitle} alt="My Name" />
+      <img className='harsh-logo harsh-logo7' src={LogoTitle} alt="My Name" />
+      <img className='harsh-logo harsh-logo8' src={LogoTitle} alt="My Name" />
+      <img className='harsh-logo harsh-logo9' src={LogoTitle} alt="My Name" />
+      <img className='harsh-logo harsh-logo10' src={LogoTitle} alt="My Name" />
+      <img className='harsh-logo harsh-logo11' src={LogoTitle} alt="My Name" />
+      <img className='harsh-logo harsh-logo12' src={LogoTitle} alt="My Name" />
+      <img className='harsh-logo harsh-logo13' src={LogoTitle} alt="My Name" />
     </div>
     <Loader type='pacman'/>
     </>

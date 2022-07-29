@@ -1,0 +1,111 @@
+.contact-form {
+  width: 100%;
+  margin-top: 20px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      opacity: 0;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+      clear: both;
+    }
+    li.half {
+      width: 40%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  textarea{
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    min-height: 150px;
+    box-sizing: border-box;
+  }
+
+  .flat-button{
+    color: #fff700;
+    background: 0 0;
+    font: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    float: right;
+    border: 1px solid #fff700;
+    border-radius: 4px ;
+  }
+}
+
+.info-map{
+  position: absolute;
+  background-color: black;
+  bottom: 0px;
+  right: 0;
+  z-index: 999999;
+  width: max-content;
+  padding: 15px;
+  color: #fff;
+  font-family: "Helvetica";
+  font-size: 15px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  text-align: center;
+  animation-fill-mode: forwards;
+  border-radius: 15px;
+  border: 2px solid white;
+
+  span{
+    font-size: 15px;
+    display: block;
+    padding-top: 20px;
+    color: #fff700;
+
+  }
+}
+
+.map-wrap{
+  background: rgba(8,253,216,0.1);
+  float: right;
+  width: 53%;
+  height: 100%;
+}
+.leaflet-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
+}
