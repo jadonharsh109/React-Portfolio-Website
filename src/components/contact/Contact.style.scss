@@ -20,7 +20,7 @@
       clear: both;
     }
     li.half {
-      width: 40%;
+      width: 49%;
       margin-left: 2%;
       float: left;
       clear: none;
@@ -64,6 +64,13 @@
     float: right;
     border: 1px solid #fff700;
     border-radius: 4px ;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:hover{
+      background: #ffd700;
+      color: #333;
+    }
   }
 }
 
@@ -98,7 +105,7 @@
 .map-wrap{
   background: rgba(8,253,216,0.1);
   float: right;
-  width: 53%;
+  width: 45%;
   height: 100%;
 }
 .leaflet-container{
