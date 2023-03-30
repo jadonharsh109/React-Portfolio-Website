@@ -116,3 +116,9 @@
   animation: backInRight 1s 1.2s;
   animation-fill-mode: forwards;
 }
+
+@media (max-width: 768px){
+  .info-map, .map-wrap{
+    display: none;
+  }
+}

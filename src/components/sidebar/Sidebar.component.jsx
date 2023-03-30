@@ -16,7 +16,7 @@ const Sidebar = () => {
     <div className="nav-bar">
       <Link className="logo" to="/">
         <img src={LogoH} alt="Logo" />
-        <img className="sub-logo" src={LogoHarsh} alt="Slobodan" />
+        <img className="sub-logo" src={LogoHarsh} alt="Harsh" />
       </Link>
 
       <nav>
@@ -44,10 +44,7 @@ const Sidebar = () => {
       </nav>
       <ul>
         <li className="social-icons">
-          <a
-            href="https://www.linkedin.com/in/harsh-jadon-095a92205"
-            target="blank"
-          >
+          <a href="https://www.linkedin.com/in/jadonharsh" target="blank">
             <FontAwesomeIcon icon={faLinkedin} color="#0e76a8" />
           </a>
         </li>

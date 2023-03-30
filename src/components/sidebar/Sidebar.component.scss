@@ -123,3 +123,8 @@
   }
 }
 
+@media (max-width: 480px){
+  .about-page .text-zone p, .contact-page .text-zone p{
+    font-size: 12px;
+  }
+}

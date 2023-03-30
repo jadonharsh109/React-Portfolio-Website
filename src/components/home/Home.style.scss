@@ -91,3 +91,55 @@ h2 {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px){
+  .home-page{
+    h1{
+      font-size: 34px;
+    }
+    .svg img{
+
+      height: 30rem;
+    }
+  }
+
+}
+@media (max-width: 768px){
+  .home-page {
+    .text-zone {
+      position: absolute;
+      left: 15%;
+      top: 55%;
+      transform: translateY(-50%);
+      width: 80%;
+      max-height: 90%;
+  }
+  .svg{
+    height: 30vh;
+    img{
+      height: 20rem;
+    }
+  }
+  }
+}
+@media (max-width:480px) {
+  .home-page{
+    .text-zone{
+      top: 55vh;
+    }
+    h1{
+      font-size: 38px;
+    }
+    .svg{
+      height: 40vh;
+    width: 100%;
+    place-items: center;
+    right: 0;
+
+      img{
+        height: 20vh;
+      }
+    }
+  }
+  
+}
+

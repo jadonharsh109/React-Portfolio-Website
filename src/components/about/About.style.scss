@@ -1,13 +1,11 @@
 .stage-cube-cont{
     width: 50%;
     height: 100%;
-    top: 0;
+    top: 30vh;
     padding-top: 18px;
     margin-left: 0;
     position: absolute;
     right: 0;
-    // overflow: hidden;
-    margin-top: 15%;
 
 }
 
@@ -71,5 +69,25 @@
     }
     83%{
         transform: rotateX(90deg);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .about-page .text-zone p, .contact-page .text-zone p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px){
+    .about-page .text-zone, .contact-page .text-zone{
+        position: absolute;
+        left: 15%;
+        top: 55%;
+        transform: translateY(-50%);
+        width: 80%;
+        max-height: 90%;
+    }
+    .stage-cube-cont{
+        display: none;
     }
 }
